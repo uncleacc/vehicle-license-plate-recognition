@@ -33,7 +33,7 @@ void ColorLocate::colorLocate(Mat src, Mat &dst) {
 
             bool isBlue = false;
             if (h >= 100 && h <= 124 &&
-                s >= 43 && s <= 255 &&
+                s >= 100 && s <= 255 &&
                 v >= 46 && v <= 255) {
                 isBlue = true;
             }
@@ -57,12 +57,12 @@ void ColorLocate::colorLocate(Mat src, Mat &dst) {
     //二值化
     Mat shold;
     threshold(hsv_split[2], shold, 0, 255, THRESH_OTSU + THRESH_BINARY);
-    //imshow("二值化", shold);
+//    imshow("二值化", shold);
     //闭操作
     Mat element = getStructuringElement(MORPH_RECT, Size(17, 3)); //经验值，可调
     Mat close;
     morphologyEx(shold, close, MORPH_CLOSE, element);
-    //imshow("close", close);
+//    imshow("闭操作", close);
 
     //求轮廓
     vector<vector<Point>> contours;
@@ -72,12 +72,14 @@ void ColorLocate::colorLocate(Mat src, Mat &dst) {
             RETR_EXTERNAL, //取外接轮廓
             CHAIN_APPROX_NONE //取轮廓上所有像素点
     );
-    Rect rt;
+    Rect res, rt;
     vector<RotatedRect> vec_color_rects;
     for (vector<Point> points: contours) {
         rt = boundingRect(points); //取最小外接矩形（可旋转/带角度）
+        if(rt.width > res.width) res = rt;
 //        rectangle(src, rt, Scalar(0, 0, 255)); //画红色矩形
     }
-    dst = src(rt);
+//    Show(src);
+    dst = src(res);
 }
 

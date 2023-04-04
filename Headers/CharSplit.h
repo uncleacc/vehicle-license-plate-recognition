@@ -5,7 +5,7 @@
 class CharSplit {
 public:
     void getChineseRect(Rect cityRect, Rect& chineseRect);
-    int getCityIndex(vector<Rect> rects);
+    int getCityIndex(vector<Rect> rects, int width);
     bool verifyCharSize(Mat src);
     bool clearMaoDing(Mat& src);
     bool charSplit(Mat final_plate, vector<Mat> &plateCharMats);

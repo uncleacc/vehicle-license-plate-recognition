@@ -5,11 +5,12 @@
 #include "ColorLocate.h"
 #include "SvmPredict.h"
 #include "AnnPredict.h"
+#include "TemplatePredict.h"
 
 class PlateRecognize
 {
 public:
-	PlateRecognize(const char* svm_model, const char* ann_model, const char* ann_zh_model);
+	PlateRecognize(const char* svm_model, const char* ann_model, const char* ann_zh_model, const char* template_model);
 	~PlateRecognize();
 
 	/**
@@ -24,6 +25,7 @@ private:
     ColorLocate* colorLocate = nullptr;
 	SvmPredict* svmPredict = nullptr;
 	AnnPredict* annPredict = nullptr;
+    TemplatePredict* temPredict = nullptr;
 };
 
 

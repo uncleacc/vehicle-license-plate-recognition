@@ -32,8 +32,8 @@ void SobelLocate::locate(Mat src, vector<Mat> &dst_plates) {
     Mat element = getStructuringElement(MORPH_RECT, Size(src.cols/40, 3)); //经验值，可调
     Mat close;
     morphologyEx(shold, close, MORPH_CLOSE, element);
-    namedWindow("闭操作", WINDOW_FREERATIO);
-    imshow("闭操作", close);
+//    namedWindow("闭操作", WINDOW_FREERATIO);
+//    imshow("闭操作", close);
     //6.求轮廓
     vector<vector<Point>> contours;
     findContours(
@@ -56,7 +56,7 @@ void SobelLocate::locate(Mat src, vector<Mat> &dst_plates) {
         Point2f tmp[4];
         rect.points(tmp);
 //        putText(src, C(++ num), tmp[0], FONT_HERSHEY_COMPLEX, 1, Scalar(0, 255, 255));
-//        RotatedRect_Drawing(src, rect, Scalar(0, 255, 0), 1); //画绿色矩形
+//        RotatedRect_Drawing(src, rect, Scalar(0, 255, 0), 3); //画绿色矩形
     }
 //    namedWindow("疑似车牌的区域", WINDOW_FREERATIO);
 //    imshow("疑似车牌的区域", src);

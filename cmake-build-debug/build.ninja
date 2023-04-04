@@ -51,70 +51,77 @@ build cmake_object_order_depends_target_vehicle_license_plate_recognition: phony
 
 build CMakeFiles/vehicle_license_plate_recognition.dir/Source/NeVehicleLicensePlateRecognition.cpp.obj: CXX_COMPILER__vehicle_license_plate_recognition_Debug E$:/CLion_projects/vehicle_license_plate_recognition/Source/NeVehicleLicensePlateRecognition.cpp || cmake_object_order_depends_target_vehicle_license_plate_recognition
   DEP_FILE = CMakeFiles\vehicle_license_plate_recognition.dir\Source\NeVehicleLicensePlateRecognition.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++1z
   INCLUDES = -isystem E:/opencv/MinGW-build/install/include
   OBJECT_DIR = CMakeFiles\vehicle_license_plate_recognition.dir
   OBJECT_FILE_DIR = CMakeFiles\vehicle_license_plate_recognition.dir\Source
 
 build CMakeFiles/vehicle_license_plate_recognition.dir/Source/AnnPredict.cpp.obj: CXX_COMPILER__vehicle_license_plate_recognition_Debug E$:/CLion_projects/vehicle_license_plate_recognition/Source/AnnPredict.cpp || cmake_object_order_depends_target_vehicle_license_plate_recognition
   DEP_FILE = CMakeFiles\vehicle_license_plate_recognition.dir\Source\AnnPredict.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++1z
   INCLUDES = -isystem E:/opencv/MinGW-build/install/include
   OBJECT_DIR = CMakeFiles\vehicle_license_plate_recognition.dir
   OBJECT_FILE_DIR = CMakeFiles\vehicle_license_plate_recognition.dir\Source
 
 build CMakeFiles/vehicle_license_plate_recognition.dir/Source/ColorLocate.cpp.obj: CXX_COMPILER__vehicle_license_plate_recognition_Debug E$:/CLion_projects/vehicle_license_plate_recognition/Source/ColorLocate.cpp || cmake_object_order_depends_target_vehicle_license_plate_recognition
   DEP_FILE = CMakeFiles\vehicle_license_plate_recognition.dir\Source\ColorLocate.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++1z
   INCLUDES = -isystem E:/opencv/MinGW-build/install/include
   OBJECT_DIR = CMakeFiles\vehicle_license_plate_recognition.dir
   OBJECT_FILE_DIR = CMakeFiles\vehicle_license_plate_recognition.dir\Source
 
 build CMakeFiles/vehicle_license_plate_recognition.dir/Source/PlateLocate.cpp.obj: CXX_COMPILER__vehicle_license_plate_recognition_Debug E$:/CLion_projects/vehicle_license_plate_recognition/Source/PlateLocate.cpp || cmake_object_order_depends_target_vehicle_license_plate_recognition
   DEP_FILE = CMakeFiles\vehicle_license_plate_recognition.dir\Source\PlateLocate.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++1z
   INCLUDES = -isystem E:/opencv/MinGW-build/install/include
   OBJECT_DIR = CMakeFiles\vehicle_license_plate_recognition.dir
   OBJECT_FILE_DIR = CMakeFiles\vehicle_license_plate_recognition.dir\Source
 
 build CMakeFiles/vehicle_license_plate_recognition.dir/Source/PlateRecognize.cpp.obj: CXX_COMPILER__vehicle_license_plate_recognition_Debug E$:/CLion_projects/vehicle_license_plate_recognition/Source/PlateRecognize.cpp || cmake_object_order_depends_target_vehicle_license_plate_recognition
   DEP_FILE = CMakeFiles\vehicle_license_plate_recognition.dir\Source\PlateRecognize.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++1z
   INCLUDES = -isystem E:/opencv/MinGW-build/install/include
   OBJECT_DIR = CMakeFiles\vehicle_license_plate_recognition.dir
   OBJECT_FILE_DIR = CMakeFiles\vehicle_license_plate_recognition.dir\Source
 
 build CMakeFiles/vehicle_license_plate_recognition.dir/Source/SobelLocate.cpp.obj: CXX_COMPILER__vehicle_license_plate_recognition_Debug E$:/CLion_projects/vehicle_license_plate_recognition/Source/SobelLocate.cpp || cmake_object_order_depends_target_vehicle_license_plate_recognition
   DEP_FILE = CMakeFiles\vehicle_license_plate_recognition.dir\Source\SobelLocate.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++1z
   INCLUDES = -isystem E:/opencv/MinGW-build/install/include
   OBJECT_DIR = CMakeFiles\vehicle_license_plate_recognition.dir
   OBJECT_FILE_DIR = CMakeFiles\vehicle_license_plate_recognition.dir\Source
 
 build CMakeFiles/vehicle_license_plate_recognition.dir/Source/SvmPredict.cpp.obj: CXX_COMPILER__vehicle_license_plate_recognition_Debug E$:/CLion_projects/vehicle_license_plate_recognition/Source/SvmPredict.cpp || cmake_object_order_depends_target_vehicle_license_plate_recognition
   DEP_FILE = CMakeFiles\vehicle_license_plate_recognition.dir\Source\SvmPredict.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++1z
   INCLUDES = -isystem E:/opencv/MinGW-build/install/include
   OBJECT_DIR = CMakeFiles\vehicle_license_plate_recognition.dir
   OBJECT_FILE_DIR = CMakeFiles\vehicle_license_plate_recognition.dir\Source
 
 build CMakeFiles/vehicle_license_plate_recognition.dir/Source/compoents.cpp.obj: CXX_COMPILER__vehicle_license_plate_recognition_Debug E$:/CLion_projects/vehicle_license_plate_recognition/Source/compoents.cpp || cmake_object_order_depends_target_vehicle_license_plate_recognition
   DEP_FILE = CMakeFiles\vehicle_license_plate_recognition.dir\Source\compoents.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++1z
   INCLUDES = -isystem E:/opencv/MinGW-build/install/include
   OBJECT_DIR = CMakeFiles\vehicle_license_plate_recognition.dir
   OBJECT_FILE_DIR = CMakeFiles\vehicle_license_plate_recognition.dir\Source
 
 build CMakeFiles/vehicle_license_plate_recognition.dir/Source/Test.cpp.obj: CXX_COMPILER__vehicle_license_plate_recognition_Debug E$:/CLion_projects/vehicle_license_plate_recognition/Source/Test.cpp || cmake_object_order_depends_target_vehicle_license_plate_recognition
   DEP_FILE = CMakeFiles\vehicle_license_plate_recognition.dir\Source\Test.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++1z
   INCLUDES = -isystem E:/opencv/MinGW-build/install/include
   OBJECT_DIR = CMakeFiles\vehicle_license_plate_recognition.dir
   OBJECT_FILE_DIR = CMakeFiles\vehicle_license_plate_recognition.dir\Source
 
 build CMakeFiles/vehicle_license_plate_recognition.dir/Source/CharSplit.cpp.obj: CXX_COMPILER__vehicle_license_plate_recognition_Debug E$:/CLion_projects/vehicle_license_plate_recognition/Source/CharSplit.cpp || cmake_object_order_depends_target_vehicle_license_plate_recognition
   DEP_FILE = CMakeFiles\vehicle_license_plate_recognition.dir\Source\CharSplit.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++1z
+  INCLUDES = -isystem E:/opencv/MinGW-build/install/include
+  OBJECT_DIR = CMakeFiles\vehicle_license_plate_recognition.dir
+  OBJECT_FILE_DIR = CMakeFiles\vehicle_license_plate_recognition.dir\Source
+
+build CMakeFiles/vehicle_license_plate_recognition.dir/Source/TemplatePredict.cpp.obj: CXX_COMPILER__vehicle_license_plate_recognition_Debug E$:/CLion_projects/vehicle_license_plate_recognition/Source/TemplatePredict.cpp || cmake_object_order_depends_target_vehicle_license_plate_recognition
+  DEP_FILE = CMakeFiles\vehicle_license_plate_recognition.dir\Source\TemplatePredict.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++1z
   INCLUDES = -isystem E:/opencv/MinGW-build/install/include
   OBJECT_DIR = CMakeFiles\vehicle_license_plate_recognition.dir
   OBJECT_FILE_DIR = CMakeFiles\vehicle_license_plate_recognition.dir\Source
@@ -127,9 +134,9 @@ build CMakeFiles/vehicle_license_plate_recognition.dir/Source/CharSplit.cpp.obj:
 #############################################
 # Link the executable vehicle_license_plate_recognition.exe
 
-build vehicle_license_plate_recognition.exe: CXX_EXECUTABLE_LINKER__vehicle_license_plate_recognition_Debug CMakeFiles/vehicle_license_plate_recognition.dir/Source/NeVehicleLicensePlateRecognition.cpp.obj CMakeFiles/vehicle_license_plate_recognition.dir/Source/AnnPredict.cpp.obj CMakeFiles/vehicle_license_plate_recognition.dir/Source/ColorLocate.cpp.obj CMakeFiles/vehicle_license_plate_recognition.dir/Source/PlateLocate.cpp.obj CMakeFiles/vehicle_license_plate_recognition.dir/Source/PlateRecognize.cpp.obj CMakeFiles/vehicle_license_plate_recognition.dir/Source/SobelLocate.cpp.obj CMakeFiles/vehicle_license_plate_recognition.dir/Source/SvmPredict.cpp.obj CMakeFiles/vehicle_license_plate_recognition.dir/Source/compoents.cpp.obj CMakeFiles/vehicle_license_plate_recognition.dir/Source/Test.cpp.obj CMakeFiles/vehicle_license_plate_recognition.dir/Source/CharSplit.cpp.obj | E$:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_gapi460.dll.a E$:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_highgui460.dll.a E$:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_ml460.dll.a E$:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_objdetect460.dll.a E$:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_photo460.dll.a E$:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_stitching460.dll.a E$:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_video460.dll.a E$:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_videoio460.dll.a E$:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_imgcodecs460.dll.a E$:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_dnn460.dll.a E$:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_calib3d460.dll.a E$:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_features2d460.dll.a E$:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_flann460.dll.a E$:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_imgproc460.dll.a E$:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_core460.dll.a
+build vehicle_license_plate_recognition.exe: CXX_EXECUTABLE_LINKER__vehicle_license_plate_recognition_Debug CMakeFiles/vehicle_license_plate_recognition.dir/Source/NeVehicleLicensePlateRecognition.cpp.obj CMakeFiles/vehicle_license_plate_recognition.dir/Source/AnnPredict.cpp.obj CMakeFiles/vehicle_license_plate_recognition.dir/Source/ColorLocate.cpp.obj CMakeFiles/vehicle_license_plate_recognition.dir/Source/PlateLocate.cpp.obj CMakeFiles/vehicle_license_plate_recognition.dir/Source/PlateRecognize.cpp.obj CMakeFiles/vehicle_license_plate_recognition.dir/Source/SobelLocate.cpp.obj CMakeFiles/vehicle_license_plate_recognition.dir/Source/SvmPredict.cpp.obj CMakeFiles/vehicle_license_plate_recognition.dir/Source/compoents.cpp.obj CMakeFiles/vehicle_license_plate_recognition.dir/Source/Test.cpp.obj CMakeFiles/vehicle_license_plate_recognition.dir/Source/CharSplit.cpp.obj CMakeFiles/vehicle_license_plate_recognition.dir/Source/TemplatePredict.cpp.obj | E$:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_world460.dll.a E$:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_world460.dll.a E$:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_world460.dll.a E$:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_world460.dll.a E$:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_world460.dll.a E$:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_world460.dll.a E$:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_world460.dll.a E$:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_world460.dll.a E$:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_world460.dll.a E$:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_world460.dll.a E$:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_world460.dll.a E$:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_world460.dll.a E$:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_world460.dll.a E$:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_world460.dll.a E$:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_world460.dll.a E$:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_world460.dll.a
   FLAGS = -g
-  LINK_LIBRARIES = E:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_gapi460.dll.a  E:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_highgui460.dll.a  E:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_ml460.dll.a  E:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_objdetect460.dll.a  E:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_photo460.dll.a  E:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_stitching460.dll.a  E:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_video460.dll.a  E:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_videoio460.dll.a  E:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_imgcodecs460.dll.a  E:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_dnn460.dll.a  E:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_calib3d460.dll.a  E:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_features2d460.dll.a  E:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_flann460.dll.a  E:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_imgproc460.dll.a  E:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_core460.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = E:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_world460.dll.a  E:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_world460.dll.a  E:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_world460.dll.a  E:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_world460.dll.a  E:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_world460.dll.a  E:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_world460.dll.a  E:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_world460.dll.a  E:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_world460.dll.a  E:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_world460.dll.a  E:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_world460.dll.a  E:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_world460.dll.a  E:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_world460.dll.a  E:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_world460.dll.a  E:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_world460.dll.a  E:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_world460.dll.a  E:/opencv/MinGW-build/install/x64/mingw/lib/libopencv_world460.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\vehicle_license_plate_recognition.dir
   POST_BUILD = cd .
   PRE_LINK = cd .

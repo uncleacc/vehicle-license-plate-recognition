@@ -77,7 +77,7 @@ bool CharSplit::clearMaoDing(Mat &src) {
 
 void CharSplit::getChineseRect(Rect cityRect, Rect &chineseRect) {
     //宽度，比城市字符宽一点
-    float width = cityRect.width * 1.35f;
+    float width = cityRect.width * 1.5f;
     int cityX = cityRect.x; //城市字符框x
     int x = cityX - width;
     chineseRect.x = x >= 0 ? x : 0;
@@ -87,12 +87,12 @@ void CharSplit::getChineseRect(Rect cityRect, Rect &chineseRect) {
 }
 
 //获取城市字符索引，参考：show/get_city_character_throry.png
-int CharSplit::getCityIndex(vector<Rect> rects) {
+int CharSplit::getCityIndex(vector<Rect> rects, int width) {
     int cityIndex = 0;
     for (int i = 0; i < rects.size(); i++) {
         Rect rect = rects[i];
         int midX = rect.x + rect.width / 2;
-        if (midX < 136 / 7 * 2 && midX > 136 / 7) {
+        if (midX < width / 7 * 2 && midX > width / 7) {
             cityIndex = i;
             break;
         }
@@ -114,11 +114,13 @@ bool CharSplit::charSplit(Mat final_plate, vector<Mat> &plateCharMats) {
         return false;
     }
     imshow("去铆钉后", shold);
-
+    Mat expand = shold.clone();
+    Mat element = getStructuringElement(MORPH_RECT, Size(2, 1)); //经验值，可调
+    morphologyEx(expand, expand, MORPH_CLOSE, element);
 //	求字符轮廓
     vector<vector<Point>> contours;
     findContours(
-            shold, //输入图像
+            expand, //输入图像
             contours, //输出图像
             RETR_EXTERNAL, //取外接轮廓
             CHAIN_APPROX_NONE //取轮廓上所有的像素点
@@ -136,7 +138,7 @@ bool CharSplit::charSplit(Mat final_plate, vector<Mat> &plateCharMats) {
     for (Rect rect: vec_ann_rects) {
         rectangle(final_plate, rect, Scalar(0, 255, 0)); //画绿色矩形
     }
-//	imshow("字符轮廓", final_plate);
+	imshow("字符轮廓", final_plate);
 
     //排序：从左到右
     sort(vec_ann_rects.begin(), vec_ann_rects.end(), [](const Rect &rect1, const Rect &rect2) {
@@ -144,8 +146,7 @@ bool CharSplit::charSplit(Mat final_plate, vector<Mat> &plateCharMats) {
     });
 
     //获取城市字符框的索引
-    int cityIndex = getCityIndex(vec_ann_rects);
-
+    int cityIndex = getCityIndex(vec_ann_rects, final_plate.size().width);
     //反推汉字字符框的位置
     Rect chineseRect;
     getChineseRect(vec_ann_rects[cityIndex], chineseRect);
@@ -157,14 +158,20 @@ bool CharSplit::charSplit(Mat final_plate, vector<Mat> &plateCharMats) {
     for (int i = cityIndex; i < vec_ann_rects.size() && count; i++, count--) {
         vec_ann_rects[i].x -= 2; //边缘加入一点黑像素增加识别成功率
         vec_ann_rects[i].width += 4;
-        vec_ann_rects[i].y -= 2;
-        vec_ann_rects[i].height += 4;
+//        if(vec_ann_rects[i].x + vec_ann_rects[i].width > final_plate.size().width)
+//            vec_ann_rects[i].width = final_plate.size().width - vec_ann_rects[i].x;
+        int tmpY = vec_ann_rects[i].y;
+        vec_ann_rects[i].y = max(0, vec_ann_rects[i].y - 2);
+        vec_ann_rects[i].height += 2 * (tmpY - vec_ann_rects[i].y);
+//        if(vec_ann_rects[i].y + vec_ann_rects[i].height > final_plate.size().height)
+//            vec_ann_rects[i].height = final_plate.size().height - vec_ann_rects[i].y;
         plateCharMats.push_back(shold(vec_ann_rects[i])); //放入城市及之后六个字符
     }
 
-    char winName[100];
-    for (int i = 0; i < plateCharMats.size(); i++) {
-        sprintf(winName, "%d 字符", i);
+//    char winName[100];
+//    for (int i = 0; i < plateCharMats.size(); i++) {
+//        sprintf(winName, "%d 字符", i);
 //		imshow(winName, plateCharMats[i]);
-    }
+//    }
+    return true;
 }

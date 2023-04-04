@@ -17,7 +17,7 @@ public:
     * plate: svm测评得到的最终车牌
     * 返回：车牌字符串
     */
-    string doPredict(Mat final_platem, vector<Mat> &plateCharMats);
+    string doPredict(vector<Mat> &plateCharMats);
 
     void predict(vector<Mat> plateCharMats, string& str_plate);
 

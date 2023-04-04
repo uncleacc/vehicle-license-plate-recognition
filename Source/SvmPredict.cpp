@@ -43,8 +43,8 @@ void SvmPredict::doPredict(vector<Mat> candi_plates, Mat &final_plate) {
     }
     if (index >= 0) {
         final_plate = candi_plates[index].clone();
-        namedWindow("svm最终候选车牌", WINDOW_FREERATIO);
-        imshow("svm最终候选车牌", final_plate);
+//        namedWindow("svm最终候选车牌", WINDOW_FREERATIO);
+//        imshow("svm最终候选车牌", final_plate);
     }
 }
 
